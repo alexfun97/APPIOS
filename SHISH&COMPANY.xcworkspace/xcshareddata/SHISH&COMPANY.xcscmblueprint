@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5201B318B95260FD47CAB208E4EB69451D3E8B0F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A6787C298F0EEFFFAD6D5FF5EF587545A3945F7D" : 9223372036854775807,
+    "5201B318B95260FD47CAB208E4EB69451D3E8B0F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BD01741F-6BDB-44E1-84D0-3C2A71928261",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A6787C298F0EEFFFAD6D5FF5EF587545A3945F7D" : "",
+    "5201B318B95260FD47CAB208E4EB69451D3E8B0F" : "SHISH&COMPANY\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SHISH&COMPANY",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SHISH&COMPANY.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sacksrock\/APPIOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5201B318B95260FD47CAB208E4EB69451D3E8B0F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sacksrock\/App.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A6787C298F0EEFFFAD6D5FF5EF587545A3945F7D"
+    }
+  ]
+}

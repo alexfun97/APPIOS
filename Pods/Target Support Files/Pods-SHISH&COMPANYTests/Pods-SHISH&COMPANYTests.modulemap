@@ -1,0 +1,6 @@
+framework module Pods_SHISH_COMPANYTests {
+  umbrella header "Pods-SHISH&COMPANYTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
