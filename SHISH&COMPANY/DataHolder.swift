@@ -21,6 +21,7 @@ class DataHolder: NSObject {
     var firStorage:FIRStorage?
     var firStorageRef:FIRStorageReference?
     var miPerfil:Perfil?
+    var miShisha:Shishas?
     
     
     func initFirebase() {

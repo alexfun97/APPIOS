@@ -41,9 +41,10 @@ class ViewController: UIViewController , UITextFieldDelegate{
         if(txtUser?.text != "" && txtPass?.text != ""){ //cambiar por usuarios de firebase 
           //if (user == primer acceso){
             //vcCompletarRegistro}
+            
+            print("pulsandoboton")
             //else {
             FIRAuth.auth()?.signIn(withEmail: (txtUser?.text)!, password: (txtPass?.text)!) { (user, error) in // if (rol==1){cliente tab bar1} if (rol==2){tienda tab bar2}
-                    
                 if(error == nil){
                     //self.performSegue(withIdentifier: "tran1", sender: nil)
                     
@@ -52,18 +53,21 @@ class ViewController: UIViewController , UITextFieldDelegate{
                     DataHolder.sharedInstance.uid = userID
                     DataHolder.sharedInstance.firDatabaseRef.child("Perfiles").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
                         // Get user value
+
                         let value = snapshot.value as? NSDictionary
                         
                         if(value == nil){
                             self.performSegue(withIdentifier: "tranNoExiste", sender: self)
-                        }
-                        else{
+                        }else{
                             DataHolder.sharedInstance.miPerfil = Perfil(valores: snapshot.value as! [String : AnyObject])
-                            
                           //print("---->>>>> ",DataHolder.sharedInstance.miPerfil?.Tipo!!)
-                            
+                            print("entrando")
                             if(DataHolder.sharedInstance.miPerfil?.Tipo == 1){
                                 self.performSegue(withIdentifier: "transicionTienda", sender: self)
+                            }
+                            else if(DataHolder.sharedInstance.miPerfil?.Tipo == 0){
+                                self.performSegue(withIdentifier: "transicionUsuario", sender: self)
+                                
                             }
                         }
                         

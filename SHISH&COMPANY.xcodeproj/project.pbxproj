@@ -17,14 +17,16 @@
 		1C70E49F1EB204FA0085A05B /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C70E49E1EB204FA0085A05B /* DataHolder.swift */; };
 		1C70E4A21EB20CF00085A05B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C70E4A01EB20CF00085A05B /* Main.storyboard */; };
 		1C70E4A61EB215D10085A05B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C70E4A51EB215D10085A05B /* GoogleService-Info.plist */; };
-		1CDBB2891EBB0D390081E0AA /* sisha.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CDBB2881EBB0D390081E0AA /* sisha.png */; };
 		1CDE15EF1ECDA3970037A9EF /* VCSelectImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE15EE1ECDA3970037A9EF /* VCSelectImg.swift */; };
 		1CDE15F11ECDAC080037A9EF /* nuevoInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE15F01ECDAC080037A9EF /* nuevoInicio.swift */; };
 		1CDE15F31ECDAF0D0037A9EF /* VCInicioNuevo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE15F21ECDAF0D0037A9EF /* VCInicioNuevo.swift */; };
 		1CDE15F51ECDAFC90037A9EF /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDE15F41ECDAFC90037A9EF /* Perfil.swift */; };
 		92D9B1BD36F1231BBAF7DC8B /* Pods_SHISH_COMPANY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFDC8EC9649CDC5BCA4C693 /* Pods_SHISH_COMPANY.framework */; };
 		9877FE7E645CE8F2E7425096 /* Pods_SHISH_COMPANYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7908B09B368153E597F44E9 /* Pods_SHISH_COMPANYUITests.framework */; };
-		A1DE4DBA1EF7C37F00B67409 /* Fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = A1DE4DB91EF7C37F00B67409 /* Fondo.png */; };
+		A158935F1EFA6754005815B1 /* Fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = A158935D1EFA6754005815B1 /* Fondo.png */; };
+		A15893601EFA6754005815B1 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A158935E1EFA6754005815B1 /* Logo.png */; };
+		A15893621EFAB81A005815B1 /* VCShishas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15893611EFAB81A005815B1 /* VCShishas.swift */; };
+		A15893641EFABBA6005815B1 /* Shishas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15893631EFABBA6005815B1 /* Shishas.swift */; };
 		B035C6F2056CF67481EA9545 /* Pods_SHISH_COMPANYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17088E80573E4D2B190DDDE /* Pods_SHISH_COMPANYTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +66,6 @@
 		1C70E49E1EB204FA0085A05B /* DataHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
 		1C70E4A11EB20CF00085A05B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C70E4A51EB215D10085A05B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		1CDBB2881EBB0D390081E0AA /* sisha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sisha.png; sourceTree = SOURCE_ROOT; };
 		1CDE15EE1ECDA3970037A9EF /* VCSelectImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCSelectImg.swift; sourceTree = "<group>"; };
 		1CDE15F01ECDAC080037A9EF /* nuevoInicio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nuevoInicio.swift; sourceTree = "<group>"; };
 		1CDE15F21ECDAF0D0037A9EF /* VCInicioNuevo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCInicioNuevo.swift; sourceTree = "<group>"; };
@@ -72,7 +73,10 @@
 		427729AC3E83D26553C02A3D /* Pods-SHISH&COMPANYUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANYUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANYUITests/Pods-SHISH&COMPANYUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6C2EFBABB3CC7A458545C776 /* Pods-SHISH&COMPANY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANY.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANY/Pods-SHISH&COMPANY.release.xcconfig"; sourceTree = "<group>"; };
 		959C53094F1DB48B06D87805 /* Pods-SHISH&COMPANYTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANYTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANYTests/Pods-SHISH&COMPANYTests.release.xcconfig"; sourceTree = "<group>"; };
-		A1DE4DB91EF7C37F00B67409 /* Fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fondo.png; path = ../../Fondo.png; sourceTree = "<group>"; };
+		A158935D1EFA6754005815B1 /* Fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fondo.png; path = ../Scr/Fondo.png; sourceTree = "<group>"; };
+		A158935E1EFA6754005815B1 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../Scr/Logo.png; sourceTree = "<group>"; };
+		A15893611EFAB81A005815B1 /* VCShishas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCShishas.swift; sourceTree = "<group>"; };
+		A15893631EFABBA6005815B1 /* Shishas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shishas.swift; sourceTree = "<group>"; };
 		B7908B09B368153E597F44E9 /* Pods_SHISH_COMPANYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHISH_COMPANYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2A93EACA364CC0A0A25629 /* Pods-SHISH&COMPANYUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANYUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANYUITests/Pods-SHISH&COMPANYUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C17088E80573E4D2B190DDDE /* Pods_SHISH_COMPANYTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHISH_COMPANYTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,8 +136,6 @@
 		1C70E46B1EB1F1000085A05B /* SHISH&COMPANY */ = {
 			isa = PBXGroup;
 			children = (
-				1CDBB2881EBB0D390081E0AA /* sisha.png */,
-				A1DE4DB91EF7C37F00B67409 /* Fondo.png */,
 				1C70E4A51EB215D10085A05B /* GoogleService-Info.plist */,
 				1C70E46C1EB1F1000085A05B /* AppDelegate.swift */,
 				1C70E46E1EB1F1000085A05B /* ViewController.swift */,
@@ -146,7 +148,10 @@
 				1CDE15EE1ECDA3970037A9EF /* VCSelectImg.swift */,
 				1CDE15F01ECDAC080037A9EF /* nuevoInicio.swift */,
 				1CDE15F21ECDAF0D0037A9EF /* VCInicioNuevo.swift */,
+				A15893611EFAB81A005815B1 /* VCShishas.swift */,
+				A15893631EFABBA6005815B1 /* Shishas.swift */,
 				1CDE15F41ECDAFC90037A9EF /* Perfil.swift */,
+				A158935C1EFA6742005815B1 /* scr */,
 			);
 			path = "SHISH&COMPANY";
 			sourceTree = "<group>";
@@ -180,6 +185,15 @@
 				427729AC3E83D26553C02A3D /* Pods-SHISH&COMPANYUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A158935C1EFA6742005815B1 /* scr */ = {
+			isa = PBXGroup;
+			children = (
+				A158935D1EFA6754005815B1 /* Fondo.png */,
+				A158935E1EFA6754005815B1 /* Logo.png */,
+			);
+			name = scr;
 			sourceTree = "<group>";
 		};
 		DB9D6E372A58CDC969B1B4C8 /* Frameworks */ = {
@@ -309,11 +323,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15893601EFA6754005815B1 /* Logo.png in Resources */,
 				1C70E4A21EB20CF00085A05B /* Main.storyboard in Resources */,
-				1CDBB2891EBB0D390081E0AA /* sisha.png in Resources */,
 				1C70E4A61EB215D10085A05B /* GoogleService-Info.plist in Resources */,
 				1C70E4771EB1F1000085A05B /* LaunchScreen.storyboard in Resources */,
-				A1DE4DBA1EF7C37F00B67409 /* Fondo.png in Resources */,
+				A158935F1EFA6754005815B1 /* Fondo.png in Resources */,
 				1C70E4741EB1F1000085A05B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,7 +492,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CDE15F11ECDAC080037A9EF /* nuevoInicio.swift in Sources */,
+				A15893621EFAB81A005815B1 /* VCShishas.swift in Sources */,
 				1CDE15F51ECDAFC90037A9EF /* Perfil.swift in Sources */,
+				A15893641EFABBA6005815B1 /* Shishas.swift in Sources */,
 				1C70E46F1EB1F1000085A05B /* ViewController.swift in Sources */,
 				1C70E46D1EB1F1000085A05B /* AppDelegate.swift in Sources */,
 				1C70E49D1EB1FB010085A05B /* VCRegistro.swift in Sources */,

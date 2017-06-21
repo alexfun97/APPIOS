@@ -23,7 +23,6 @@ class Perfil: NSObject {
     
     func getPerfil() -> [String:AnyObject] {
         var hm:[String:AnyObject]=[:]
-        hm["Imagen"]=Imagen! as AnyObject
         hm["Tipo"]=Tipo! as AnyObject
         
         return hm
