@@ -103,6 +103,10 @@ class VCShishas: UIViewController, UIImagePickerControllerDelegate,UINavigationC
     }
     @IBAction func accionBotonAceptar(){
         FIRDatabase.database().reference().child("Shishas/\(String(describing: (FIRAuth.auth()?.currentUser?.uid)!))/\((txtNombre?.text)!)/Descripcion").setValue(txtDescripcion?.text)
-        FIRDatabase.database().reference().child("Shishas/\(String(describing: (FIRAuth.auth()?.currentUser?.uid)!))/\((txtNombre?.text)!)/URL").setValue("Shishas/\(String(describing: (FIRAuth.auth()?.currentUser?.uid)!))/\((txtNombre?.text)!).jpg")
+        FIRDatabase.database().reference().child("Shishas/\(String(describing: (FIRAuth.auth()?.currentUser?.uid)!))/\((txtNombre?.text)!)/URL").setValue("Shishas/\(String(describing: (FIRAuth.auth()?.currentUser?.uid)!))/\(txtNombre?.text as! String).jpg")
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func accionBotonCancelar(){
+        self.dismiss(animated: true, completion: nil)
     }
 }

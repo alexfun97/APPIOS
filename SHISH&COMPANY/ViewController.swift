@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class ViewController: UIViewController , UITextFieldDelegate{
+class ViewController: UIViewController , UITextFieldDelegate, ListaShishas{
     @IBOutlet var btLogear:UIButton?
     @IBOutlet var txtUser:UITextField?
     @IBOutlet var txtPass:UITextField?
@@ -37,6 +37,13 @@ class ViewController: UIViewController , UITextFieldDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func ShishasDelegate(nShishas: Int, nCocktails: Int) {
+        DataHolder.sharedInstance.numeroShishas = nShishas
+        DataHolder.sharedInstance.numeroCocktails = nCocktails
+        self.performSegue(withIdentifier: "transicionTienda", sender: self)
+    }
+    
     @IBAction func accionbotonLoguear(){
         if(txtUser?.text != "" && txtPass?.text != ""){ //cambiar por usuarios de firebase 
           //if (user == primer acceso){
@@ -63,7 +70,7 @@ class ViewController: UIViewController , UITextFieldDelegate{
                           //print("---->>>>> ",DataHolder.sharedInstance.miPerfil?.Tipo!!)
                             print("entrando")
                             if(DataHolder.sharedInstance.miPerfil?.Tipo == 1){
-                                self.performSegue(withIdentifier: "transicionTienda", sender: self)
+                                DataHolder.sharedInstance.cargarShishasYCocktails(delegate: self)
                             }
                             else if(DataHolder.sharedInstance.miPerfil?.Tipo == 0){
                                 self.performSegue(withIdentifier: "transicionUsuario", sender: self)

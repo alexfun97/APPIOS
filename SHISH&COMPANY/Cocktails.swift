@@ -9,5 +9,19 @@
 import UIKit
 
 class Cocktails: NSObject {
-
+    var Imagen:UIImage?
+    var Nombre:String?
+    var Descripcion:String?
+    
+    override init() {
+        
+    }
+    
+    init(valores:[String:AnyObject]) {
+        Imagen = valores ["Imagen"] as? UIImage
+        Nombre = valores ["Nombre"] as? String
+        Descripcion = valores ["Descripcion"] as? String
+    }
+    
+    
 }

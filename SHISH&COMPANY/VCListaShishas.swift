@@ -7,18 +7,34 @@
 //
 
 import UIKit
+import Firebase
 
-class VCListaShishas: UIViewController {
+class VCListaShishas: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet var TableView:UITableView?
+    @IBOutlet var NombreShisha:UILabel?
+    @IBOutlet var DescShisha:UILabel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //Aqui quiero hacer return de el numero de shishas que hay
+        return DataHolder.sharedInstance.numeroShishas!
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Y aquí es donde quiero cambiar los labels y la imagenview de celdaProducto para tener una diferente por cada shisha puesta en Firebase
+        let celda:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "celdaShishas")!
+        celda.
+        return celda
     }
     
 

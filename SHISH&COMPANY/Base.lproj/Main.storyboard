@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cGe-Ae-jR7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="-1393" y="-1095"/>
         </scene>
-        <!--Item 1-->
+        <!--Shishas-->
         <scene sceneID="PBB-Fd-OgT">
             <objects>
-                <viewController id="wsn-vz-fEC" sceneMemberID="viewController">
+                <viewController id="wsn-vz-fEC" userLabel="Shishas" customClass="VCListaShishas" customModule="SHISH_COMPANY" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="52u-oe-Um9"/>
                         <viewControllerLayoutGuide type="bottom" id="Zn4-8v-WRk"/>
@@ -98,35 +98,40 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="krX-ZR-p0P">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaShishas" rowHeight="131" id="krX-ZR-p0P">
                                         <rect key="frame" x="0.0" y="28" width="375" height="131"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="krX-ZR-p0P" id="9Ki-co-Mpq">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="130.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7YM-55-Tcc">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7YM-55-Tcc" userLabel="ImagenShisha">
                                                     <rect key="frame" x="0.0" y="0.0" width="131" height="131"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8V-lA-wuB" userLabel="lblDescrip">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8V-lA-wuB" userLabel="DescShisha">
                                                     <rect key="frame" x="139" y="45" width="228" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejC-CC-w9S" userLabel="lblNombre">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejC-CC-w9S" userLabel="NombreShisha">
                                                     <rect key="frame" x="139" y="8" width="145" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.99122852087020874" green="0.99629467725753784" blue="0.99602729082107544" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wsn-vz-fEC" id="ttg-Zf-sUl"/>
+                                    <outlet property="delegate" destination="wsn-vz-fEC" id="piZ-2f-uxY"/>
+                                </connections>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8he-u2-2Ub">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -144,7 +149,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Gup-N1-hln"/>
+                    <tabBarItem key="tabBarItem" title="Shishas" id="Gup-N1-hln" userLabel="Shishas"/>
+                    <connections>
+                        <outlet property="DescShisha" destination="n8V-lA-wuB" id="lC6-DT-zWZ"/>
+                        <outlet property="NombreShisha" destination="ejC-CC-w9S" id="sHg-MG-ma4"/>
+                        <outlet property="TableView" destination="hAo-RS-Pce" id="xh1-Bf-yLj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OxN-Xh-gE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -196,7 +206,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yhf-9v-AtI">
-                                <rect key="frame" x="16" y="391" width="97" height="30"/>
+                                <rect key="frame" x="16" y="391" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -231,6 +241,9 @@
                                 <state key="normal" title="CANCELAR">
                                     <color key="titleColor" red="0.35120403770000003" green="0.1939354241" blue="0.3663516939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="accionBotonCancelar" destination="cGe-Ae-jR7" eventType="touchUpInside" id="kYw-Qv-IOV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oh-8h-ABb">
                                 <rect key="frame" x="16" y="447" width="97" height="21"/>
@@ -270,10 +283,10 @@
             </objects>
             <point key="canvasLocation" x="-1394" y="987"/>
         </scene>
-        <!--Item-->
+        <!--Cocktails-->
         <scene sceneID="sLV-lc-Xhp">
             <objects>
-                <viewController id="sjp-lU-f7L" sceneMemberID="viewController">
+                <viewController id="sjp-lU-f7L" userLabel="Cocktails" customClass="VCListaCocktails" customModule="SHISH_COMPANY" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aOi-Ik-gcD"/>
                         <viewControllerLayoutGuide type="bottom" id="NeK-2W-m3S"/>
@@ -291,7 +304,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="Six-Zd-5YQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaCocktails" rowHeight="131" id="Six-Zd-5YQ">
                                         <rect key="frame" x="0.0" y="28" width="375" height="131"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Six-Zd-5YQ" id="NtS-lv-dna">
@@ -302,24 +315,29 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="131" height="131"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DF-D1-CDr" userLabel="lblDescrip">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IWUIYSGFU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DF-D1-CDr" userLabel="lblDescrip">
                                                     <rect key="frame" x="139" y="45" width="228" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRD-d0-AqK" userLabel="lblNombre">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DHBSKA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRD-d0-AqK" userLabel="lblNombre">
                                                     <rect key="frame" x="139" y="8" width="145" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.99122852087020874" green="0.99629467725753784" blue="0.99602729082107544" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="sjp-lU-f7L" id="UKp-bL-fYN"/>
+                                    <outlet property="delegate" destination="sjp-lU-f7L" id="Z85-JM-L4F"/>
+                                </connections>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Quq-JO-gl5">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -328,7 +346,7 @@
                                     <navigationItem title="Cocktails" id="ESr-TC-i1A">
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Vf8-zQ-8qL">
                                             <connections>
-                                                <segue destination="I9y-wK-j6n" kind="show" id="Mhn-69-I9X"/>
+                                                <segue destination="I9y-wK-j6n" kind="show" id="ePG-Bx-4Yh"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -337,9 +355,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="9ko-p9-7lM"/>
+                    <tabBarItem key="tabBarItem" title="Cocktails" id="9ko-p9-7lM" userLabel="Cocktails"/>
                     <connections>
-                        <segue destination="I9y-wK-j6n" kind="show" id="f5a-zB-YUG"/>
+                        <outlet property="TableView" destination="m8U-TP-VDz" id="Aq6-qS-QUR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFc-Hl-0yH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -651,10 +669,10 @@
             </objects>
             <point key="canvasLocation" x="-2215.1999999999998" y="-8.5457271364317844"/>
         </scene>
-        <!--View Controller-->
+        <!--Cocktails-->
         <scene sceneID="Mg3-zg-YQx">
             <objects>
-                <viewController id="I9y-wK-j6n" sceneMemberID="viewController">
+                <viewController id="I9y-wK-j6n" customClass="VCCocktails" customModule="SHISH_COMPANY" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="naC-9A-n47"/>
                         <viewControllerLayoutGuide type="bottom" id="hOG-WI-1b6"/>
@@ -674,6 +692,9 @@
                                 <state key="normal" title="SELECCIONAR GALERIA">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="accionBotonGaleria" destination="I9y-wK-j6n" eventType="touchUpInside" id="pjA-Z1-klM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMt-dr-BaG">
                                 <rect key="frame" x="16" y="362" width="67" height="21"/>
@@ -689,9 +710,12 @@
                                 <state key="normal" title="SELECCIONAR CAMARA">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="accionBotonCamara:" destination="I9y-wK-j6n" eventType="touchUpInside" id="3ys-e1-XGf"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGS-jD-eUe">
-                                <rect key="frame" x="16" y="391" width="97" height="30"/>
+                                <rect key="frame" x="16" y="391" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -716,7 +740,7 @@
                                     <color key="titleColor" red="0.35125538709999998" green="0.19383731479999999" blue="0.37052464489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="acciono" destination="cNj-gW-OtT" eventType="touchUpInside" id="zof-6M-4dd"/>
+                                    <action selector="accionBotonAceptar" destination="I9y-wK-j6n" eventType="touchUpInside" id="W2l-RM-czE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVU-HT-DxE">
@@ -726,6 +750,9 @@
                                 <state key="normal" title="CANCELAR">
                                     <color key="titleColor" red="0.35120403770000003" green="0.1939354241" blue="0.3663516939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="accionBotonCancelar" destination="I9y-wK-j6n" eventType="touchUpInside" id="uxN-2t-uIu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16l-lQ-HFj">
                                 <rect key="frame" x="16" y="447" width="97" height="21"/>
@@ -737,6 +764,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="imgview" destination="IXe-zA-Rp2" id="uD7-Wf-gwc"/>
+                        <outlet property="txtDescripcion" destination="4Sv-Yl-snJ" id="aDb-3o-Ew9"/>
+                        <outlet property="txtNombre" destination="mGS-jD-eUe" id="cbQ-zN-UrW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvz-tt-9zz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -748,10 +780,9 @@
         <image name="Logo.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ayW-4e-BC3"/>
-        <segue reference="1Cq-dr-V7A"/>
         <segue reference="b0S-pZ-IUC"/>
-        <segue reference="f5a-zB-YUG"/>
+        <segue reference="1Cq-dr-V7A"/>
+        <segue reference="s7q-Sq-8i5"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -12,7 +12,7 @@ import FirebaseDatabase
 import FirebaseStorage
 
 
-class DataHolder: NSObject {
+class DataHolder: NSObject, ListaShishas {
     var uid:String?
     
     static let sharedInstance:DataHolder=DataHolder()
@@ -22,6 +22,11 @@ class DataHolder: NSObject {
     var firStorageRef:FIRStorageReference?
     var miPerfil:Perfil?
     var miShisha:Shishas?
+    var miCocktail:Cocktails?
+    var nShishas:Int?
+    var numeroShishas:Int?
+    var nCocktails:Int?
+    var numeroCocktails:Int?
     
     
     func initFirebase() {
@@ -37,4 +42,30 @@ class DataHolder: NSObject {
         firDatabaseRef.updateChildValues (childUpdates)
     }
     
+    func cargarShishasYCocktails(delegate: ListaShishas) {
+        firDatabaseRef.child("Shishas/" + (FIRAuth.auth()?.currentUser?.uid)!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            self.nShishas = value?.count
+            self.CocktailsDelegate(delegate: delegate, nShishas: self.nShishas!)
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    func CocktailsDelegate(delegate: ListaShishas, nShishas: Int)  {
+        firDatabaseRef.child("Cocktails/" + (FIRAuth.auth()?.currentUser?.uid)!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            self.nCocktails = value?.count
+            delegate.ShishasDelegate!(nShishas: nShishas, nCocktails: self.nCocktails!)
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+}
+
+@objc protocol ListaShishas{
+    @objc optional func ShishasDelegate(nShishas:Int, nCocktails: Int)
+    @objc optional func CocktailsDelegate(delegate: ListaShishas, nShishas: Int)
 }
