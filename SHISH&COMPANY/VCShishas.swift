@@ -27,9 +27,6 @@ class VCShishas: UIViewController, UIImagePickerControllerDelegate,UINavigationC
         // Do any additional setup after loading the view.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         
-        //Descomentar, si el tap no debe interferir o cancelar otras acciones
-        //tap.cancelsTouchesInView = false
-        
         view.addGestureRecognizer(tap)
         
     }

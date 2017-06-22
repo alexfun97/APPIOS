@@ -33,7 +33,7 @@ class VCListaShishas: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Y aquí es donde quiero cambiar los labels y la imagenview de celdaProducto para tener una diferente por cada shisha puesta en Firebase
         let celda:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "celdaShishas")!
-        celda.
+        //celda.
         return celda
     }
     

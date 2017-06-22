@@ -78,7 +78,6 @@ class VCInicioNuevo: UIViewController, UIImagePickerControllerDelegate, UINaviga
         let metadata = FIRStorageMetadata()
         metadata.contentType = "image/jpeg"
         let profilePicRef = referenceStorage?.child("perfil/\(self.loggedInUser!)/profile_pic.jpg")
-        //profilePicRef.put(UIImageJPEGRepresentation((self.imageProfile.imageView?.image)!, 0.8)!)
         profilePicRef?.put(UIImageJPEGRepresentation((img)!, 0.4)!, metadata: metadata)
         
         profilePicRef?.downloadURL(completion: { (url, error) in

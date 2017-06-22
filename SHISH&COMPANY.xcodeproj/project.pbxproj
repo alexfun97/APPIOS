@@ -31,6 +31,8 @@
 		A1617EDA1EFB0A9800436A06 /* Cocktails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1617ED91EFB0A9800436A06 /* Cocktails.swift */; };
 		A1617EDC1EFB1AA900436A06 /* VCListaShishas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1617EDB1EFB1AA900436A06 /* VCListaShishas.swift */; };
 		A1617EDE1EFBB22500436A06 /* VCListaCocktails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1617EDD1EFBB22500436A06 /* VCListaCocktails.swift */; };
+		A1617EE01EFBC43400436A06 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1617EDF1EFBC43400436A06 /* MapKit.framework */; };
+		A1617EE21EFBC53400436A06 /* VCCMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1617EE11EFBC53400436A06 /* VCCMaps.swift */; };
 		B035C6F2056CF67481EA9545 /* Pods_SHISH_COMPANYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17088E80573E4D2B190DDDE /* Pods_SHISH_COMPANYTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,8 @@
 		A1617ED91EFB0A9800436A06 /* Cocktails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cocktails.swift; sourceTree = "<group>"; };
 		A1617EDB1EFB1AA900436A06 /* VCListaShishas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCListaShishas.swift; sourceTree = "<group>"; };
 		A1617EDD1EFBB22500436A06 /* VCListaCocktails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCListaCocktails.swift; sourceTree = "<group>"; };
+		A1617EDF1EFBC43400436A06 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A1617EE11EFBC53400436A06 /* VCCMaps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCCMaps.swift; sourceTree = "<group>"; };
 		B7908B09B368153E597F44E9 /* Pods_SHISH_COMPANYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHISH_COMPANYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2A93EACA364CC0A0A25629 /* Pods-SHISH&COMPANYUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANYUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANYUITests/Pods-SHISH&COMPANYUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C17088E80573E4D2B190DDDE /* Pods_SHISH_COMPANYTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHISH_COMPANYTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1617EE01EFBC43400436A06 /* MapKit.framework in Frameworks */,
 				92D9B1BD36F1231BBAF7DC8B /* Pods_SHISH_COMPANY.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +166,7 @@
 				A15893611EFAB81A005815B1 /* VCShishas.swift */,
 				A1617ED71EFB070500436A06 /* VCCocktails.swift */,
 				A15893631EFABBA6005815B1 /* Shishas.swift */,
+				A1617EE11EFBC53400436A06 /* VCCMaps.swift */,
 				A1617ED91EFB0A9800436A06 /* Cocktails.swift */,
 				1CDE15F41ECDAFC90037A9EF /* Perfil.swift */,
 				A158935C1EFA6742005815B1 /* scr */,
@@ -211,6 +217,7 @@
 		DB9D6E372A58CDC969B1B4C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1617EDF1EFBC43400436A06 /* MapKit.framework */,
 				1AFDC8EC9649CDC5BCA4C693 /* Pods_SHISH_COMPANY.framework */,
 				C17088E80573E4D2B190DDDE /* Pods_SHISH_COMPANYTests.framework */,
 				B7908B09B368153E597F44E9 /* Pods_SHISH_COMPANYUITests.framework */,
@@ -297,6 +304,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = GHEVHSM6WY;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					1C70E47C1EB1F1000085A05B = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -504,6 +516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CDE15F11ECDAC080037A9EF /* nuevoInicio.swift in Sources */,
+				A1617EE21EFBC53400436A06 /* VCCMaps.swift in Sources */,
 				A15893621EFAB81A005815B1 /* VCShishas.swift in Sources */,
 				1CDE15F51ECDAFC90037A9EF /* Perfil.swift in Sources */,
 				A1617EDA1EFB0A9800436A06 /* Cocktails.swift in Sources */,
